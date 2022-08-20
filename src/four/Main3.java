@@ -1,34 +1,21 @@
-package three;
-
-class Mango extends Exception {
+package four;
 
 
-}
-
-
-
-
-public class Main5 {
-
-
+public class Main3 {
     public static void main(String[] args) {
-
         try {
 
             int num1=Integer.parseInt(args[0]);
             int num2=Integer.parseInt(args[1]);
             System.out.println(num1/num2);
 
+
         }
-        catch (NumberFormatException e) {
+        // Multi Catch Stmt.
+        catch (NumberFormatException | ArrayIndexOutOfBoundsException | ArithmeticException e) {
             e.printStackTrace();
         }
 
-
-        /*catch(Mango exception){
-            System.out.println(exception);
-        }
-*/
         System.out.println("Hello");
     }
 }
